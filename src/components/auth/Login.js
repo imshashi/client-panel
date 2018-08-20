@@ -31,7 +31,7 @@ class Login extends Component {
           <div className="card">
             <div className="card-body">
               <h1 className="text-center pb-4 pt-3">
-                <span className="text-primary">
+                <span className="text-info">
                   <i className="fas fa-lock" /> Login
                 </span>
               </h1>
@@ -63,7 +63,7 @@ class Login extends Component {
                 <input
                   type="submit"
                   value="Login"
-                  className="btn btn-primary btn-block"
+                  className="btn btn-info btn-block"
                 />
               </form>
             </div>
