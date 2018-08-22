@@ -5,7 +5,7 @@ const initialState = {
   messageType: null
 }
 
-export default = (state=initialState, action) => {
+export default function(state=initialState, action) {
   switch(action.type) {
     case NOTIFY_USER:
       return {
