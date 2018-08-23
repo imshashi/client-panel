@@ -9,6 +9,7 @@ import './App.css';
 import AppNavbar from './components/layout/AppNavbar';
 import Dashboard from './components/layout/Dashboard';
 import Login from './components/auth/Login';
+import Settings from './components/settings/Settings';
 import AddClient from './components/clients/AddClient';
 import EditClient from './components/clients/EditClient';
 import ClientDetails from './components/clients/ClientDetails';
@@ -23,6 +24,7 @@ class App extends Component {
             <div className="container">
               <Switch>
                 <Route exact path="/" component={ UserIsAuthenticated(Dashboard) } />
+                <Route exact path="/settings" component={ UserIsAuthenticated(Settings) } />
                 <Route exact path="/clients/new" component={ UserIsAuthenticated(AddClient) } />
                 <Route exact path="/clients/:id/edit" component={ UserIsAuthenticated(EditClient) } />
                 <Route exact path="/clients/:id" component={ UserIsAuthenticated(ClientDetails) } />

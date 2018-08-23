@@ -16,7 +16,7 @@ export const setDisableBalanceOnEdit = () => {
   }
 }
 
-export const setAllowRegistraion = () => {
+export const setAllowRegistration = () => {
   return {
     type: ALLOW_REGISTRATION
   }
