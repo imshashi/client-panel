@@ -9,6 +9,22 @@ import {
 } from '../../actions/settingsActions';
 
 class Settings extends Component {
+
+  disableBalanceOnAddChange = () => {
+    const { setDisableBalanceOnAdd } = this.props;
+    setDisableBalanceOnAdd();
+  }
+
+  disableBalanceOnEditChange = () => {
+    const { setDisableBalanceOnEdit } = this.props;
+    setDisableBalanceOnEdit();
+  }
+
+  allowRegistrationChange = () => {
+    const { setAllowRegistration } = this.props;
+    setAllowRegistration();
+  }
+
   render() {
     const {
       disableBalanceOnAdd,
