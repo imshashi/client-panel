@@ -9,6 +9,7 @@ import './App.css';
 import AppNavbar from './components/layout/AppNavbar';
 import Dashboard from './components/layout/Dashboard';
 import Login from './components/auth/Login';
+import Register from './components/auth/Register';
 import Settings from './components/settings/Settings';
 import AddClient from './components/clients/AddClient';
 import EditClient from './components/clients/EditClient';
@@ -29,6 +30,7 @@ class App extends Component {
                 <Route exact path="/clients/:id/edit" component={ UserIsAuthenticated(EditClient) } />
                 <Route exact path="/clients/:id" component={ UserIsAuthenticated(ClientDetails) } />
                 <Route exact path="/login" component={ UserIsNotAuthenticated(Login) } />
+                <Route exact path="/register" component={ UserIsNotAuthenticated(Register) } />
               </Switch>
             </div>
           </div>
